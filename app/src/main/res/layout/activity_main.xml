@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/all_questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="@dimen/padding_16dp"
+                    android:paddingEnd="@dimen/padding_16dp"
+                    android:paddingLeft="@dimen/padding_16dp"
+                    android:paddingRight="@dimen/padding_16dp"
+                    android:paddingStart="@dimen/padding_16dp"
+                    android:paddingTop="@dimen/padding_16dp"
+                    android:text="@string/title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_name"
+                android:paddingEnd="@dimen/padding_16dp"
+                android:paddingLeft="@dimen/padding_16dp"
+                android:paddingRight="@dimen/padding_16dp"
+                android:paddingStart="@dimen/padding_16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_16dp"
+                    android:paddingEnd="@dimen/padding_16dp"
+                    android:paddingLeft="@dimen/padding_16dp"
+                    android:paddingRight="@dimen/padding_16dp"
+                    android:paddingStart="@dimen/padding_16dp"
+                    android:paddingTop="@dimen/padding_16dp"
+                    android:text="@string/question1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q1_rd1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q1_rd2"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q1_rd3"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q1_rd4"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/padding_16dp"
+                    android:paddingLeft="@dimen/padding_16dp"
+                    android:paddingRight="@dimen/padding_16dp"
+                    android:paddingStart="@dimen/padding_16dp"
+                    android:paddingTop="@dimen/padding_16dp"
+                    android:text="@string/question2"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_16dp"
+                    android:layout_marginRight="@dimen/padding_16dp"
+                    android:src="@drawable/venus" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q2_rd1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q2_rd2"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q2_rd3"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q2_rd4"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_16dp"
+                    android:paddingEnd="@dimen/padding_16dp"
+                    android:paddingLeft="@dimen/padding_16dp"
+                    android:paddingRight="@dimen/padding_16dp"
+                    android:paddingStart="@dimen/padding_16dp"
+                    android:paddingTop="@dimen/padding_16dp"
+                    android:text="@string/question3"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_16dp"
+                    android:layout_marginLeft="@dimen/padding_16dp"
+                    android:layout_marginStart="@dimen/padding_16dp"
+                    android:text="@string/button_play_music" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q3_rd1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q3_rd2"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q3_rd3"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q3_rd4"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_16dp"
+                    android:paddingEnd="@dimen/padding_16dp"
+                    android:paddingLeft="@dimen/padding_16dp"
+                    android:paddingRight="@dimen/padding_16dp"
+                    android:paddingStart="@dimen/padding_16dp"
+                    android:paddingTop="@dimen/padding_16dp"
+                    android:text="@string/question4"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/padding_16dp"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/button_video" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingEnd="@dimen/padding_16dp"
+                        android:paddingLeft="@dimen/padding_16dp"
+                        android:paddingRight="@dimen/padding_16dp"
+                        android:paddingStart="@dimen/padding_16dp"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/chkbox_hint"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_16dp"
+                            android:layout_marginStart="@dimen/padding_16dp"
+                            android:text="@string/q4_ckbx1"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_16dp"
+                            android:layout_marginStart="@dimen/padding_16dp"
+                            android:text="@string/q4_ckbx2"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_16dp"
+                            android:layout_marginStart="@dimen/padding_16dp"
+                            android:text="@string/q4_ckbx3"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_16dp"
+                            android:layout_marginStart="@dimen/padding_16dp"
+                            android:text="@string/q4_ckbx4"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_16dp"
+                            android:layout_marginStart="@dimen/padding_16dp"
+                            android:text="@string/q4_ckbx5"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_16dp"
+                            android:layout_marginStart="@dimen/padding_16dp"
+                            android:text="@string/q4_ckbx6"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_16dp"
+                            android:layout_marginStart="@dimen/padding_16dp"
+                            android:text="@string/q4_ckbx7"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_16dp"
+                            android:layout_marginStart="@dimen/padding_16dp"
+                            android:text="@string/q4_ckbx8"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_16dp"
+                    android:paddingEnd="@dimen/padding_16dp"
+                    android:paddingLeft="@dimen/padding_16dp"
+                    android:paddingRight="@dimen/padding_16dp"
+                    android:paddingStart="@dimen/padding_16dp"
+                    android:paddingTop="@dimen/padding_16dp"
+                    android:text="@string/question5"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="Bram Stoker"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="Stephen King"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="Joe Hill"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="Ann Rice"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_16dp"
+                    android:paddingEnd="@dimen/padding_16dp"
+                    android:paddingLeft="@dimen/padding_16dp"
+                    android:paddingRight="@dimen/padding_16dp"
+                    android:paddingStart="@dimen/padding_16dp"
+                    android:paddingTop="@dimen/padding_16dp"
+                    android:text="@string/question6"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/cooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_16dp"
+                    android:layout_marginRight="@dimen/padding_16dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q6_rd1"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q6_rd2"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q6_rd3"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_16dp"
+                        android:layout_marginStart="@dimen/padding_16dp"
+                        android:text="@string/q6_rd4"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/all_questions"
+            android:layout_centerHorizontal="true"
+            android:text="Score" />
+    </RelativeLayout>
+</ScrollView>
