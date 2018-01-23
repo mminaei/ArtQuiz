@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Art Quiz</string>
+    <string name="title">به آزمون هنر خوش آمدید!</string>
+    <string name="enter_name">نام و نام خانوادگی</string>
+    <string name="question1">سؤال ۱: رومئو و ژولیت در کدام شهر زندگی میکردند؟</string>
+    <string name="question2">سؤال ۲: نام نقاشی زیر چیست و نقاش آن کیست؟</string>
+    <string name="question3">سؤال ۳: سازنده موسیقی زیر چه کسی است؟</string>
+    <string name="question4">سؤال ۴: نوع رقص زیر چیست و در چه کشورهایی رواج دارد؟ میتوانید بیشتر از یک گزینه انتخاب کنید.</string>
+    <string name="question5">سؤال ۵: نویسنده اصلی دراکولا چه کسی است؟</string>
+    <string name="question6">سؤال ۶: در فیلم زیر چه غذایی در حال تهیه شدن است؟</string>
+    <string name="q1_rd1">پاریس</string>
+    <string name="q1_rd2">ورونا</string>
+    <string name="q1_rd3">رم</string>
+    <string name="q1_rd4">وینا</string>
+    <string name="button_play_music">پخش موسیقی</string>
+    <string name="q3_rd1">جان سباستین باخ</string>
+    <string name="q3_rd2">ولفگانگ آمادئوس موتزارت</string>
+    <string name="q3_rd3">فرانتز شوبرت</string>
+    <string name="q3_rd4">لودویگ فان بتهوون</string>
+    <string name="button_video">پخش ویدئو</string>
+    <string name="chkbox_hint">توجه: ویدئو در برنامه یوتیوب اجرا میشود.</string>
+    <string name="q4_ckbx1">فلامنکو - اسپانیا</string>
+    <string name="q4_ckbx2">سالسا - پورتوریکو</string>
+    <string name="q4_ckbx3">سالسا - ژاپن</string>
+    <string name="q4_ckbx4">سوینگ - آمریکا</string>
+    <string name="q4_ckbx5">تانگو - اسپانیا</string>
+    <string name="q4_ckbx6">والتز - فرانسه</string>
+    <string name="q4_ckbx7">سالسا - برزیل</string>
+    <string name="q4_ckbx8">فلامنکو - مکزیک</string>
+    <string name="q5_rd1">برام استوکر</string>
+    <string name="q5_rd2">استفن کینگ</string>
+    <string name="q5_rd3">جو هیل</string>
+    <string name="q5_rd4">ان رایس</string>
+    <string name="q6_rd1">تاکو</string>
+    <string name="q6_rd2">کوفته قلقلی</string>
+    <string name="q6_rd3">بستنی</string>
+    <string name="q6_rd4">بیسکویت</string>
+    <string name="button_score">نتیجه</string>
+    <string name="q2_rd1">تابلوی Benois Madonna متعلق به لئوناردو داوینچی</string>
+    <string name="q2_rd2">تابلوی Madonna and Child with St John and Angels متعلق به میکلانژ</string>
+    <string name="q2_rd3">تابلوی The Birth of Venus متعلق به بوتیچلی</string>
+    <string name="q2_rd4">تابلوی Nativity متعلق به جیوتو</string>
+</resources>

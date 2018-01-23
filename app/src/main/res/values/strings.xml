@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">Art Quiz</string>
+    <string name="app_name" translatable="false">Art Quiz</string>
     <string name="title">Welcome to Art Quiz!</string>
     <string name="enter_name">Enter your full name</string>
     <string name="question1">Q1. In which city did Romeo and Juliet live?</string>
-    <string name="question2">Q2. Wha is the name of the following painting and who painted it??</string>
+    <string name="question2">Q2. Wha is the name of the following painting and its painter?</string>
     <string name="question3">Q3. Who is the composer of the following music?</string>
-    <string name="question4">Q4. What is the type of the following dance and in what countries is common?</string>
-    <string name="question5">Who was the original author of Dracula?</string>
-    <string name="question6">What type of food is this?</string>
+    <string name="question4">Q4. What is the type of the following dance and in what countries is common? (You may choose more than one answer.)</string>
+    <string name="question5">Q5. Who was the original author of Dracula?</string>
+    <string name="question6">Q6. What type of food is this?</string>
     <string name="q1_rd1">Paris</string>
     <string name="q1_rd2">Verona</string>
     <string name="q1_rd3">Rome</string>
@@ -22,6 +22,7 @@
     <string name="q3_rd3">Franz Schubert</string>
     <string name="q3_rd4">Ludwig van Beethoven</string>
     <string name="button_video">Play Video</string>
+    <string name="chkbox_hint">\"Note: YouTube app will open to play the video.\"</string>
     <string name="q4_ckbx1">Flamenco - Spain</string>
     <string name="q4_ckbx2">Salsa - Puerto Rico</string>
     <string name="q4_ckbx3">Salsa - Japan</string>
@@ -30,9 +31,15 @@
     <string name="q4_ckbx6">Waltz - France</string>
     <string name="q4_ckbx7">Salsa - Brazil</string>
     <string name="q4_ckbx8">Flamenco - Mexico</string>
-    <string name="chkbox_hint">You may choose more than one correct answer.</string>
+    <string name="q5_rd1">Bram Stoker</string>
+    <string name="q5_rd2">Stephen King</string>
+    <string name="q5_rd3">Joe Hill</string>
+    <string name="q5_rd4">Ann Rice</string>
     <string name="q6_rd1">Taco</string>
     <string name="q6_rd2">Meatball</string>
     <string name="q6_rd3">Ice Cream</string>
     <string name="q6_rd4">Cookie</string>
+    <string name="cooking_image_description" translatable="false">This image plays a gif that shows ice cream rolls</string>
+    <string name="button_score">Score</string>
+    <string name="painting_image_description" translatable="false">Painting of The Birth of Venus by Botticelli</string>
 </resources>
