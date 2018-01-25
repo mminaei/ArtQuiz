@@ -3,7 +3,7 @@
     <string name="title">Welcome to Art Quiz!</string>
     <string name="enter_name">Enter your full name</string>
     <string name="question1">Q1. In which city did Romeo and Juliet live?</string>
-    <string name="question2">Q2. Wha is the name of the following painting and its painter?</string>
+    <string name="question2">Q2. What is the name of the following painting and its painter?</string>
     <string name="question3">Q3. Who is the composer of the following music?</string>
     <string name="question4">Q4. What is the type of the following dance and in what countries is common? (You may choose more than one answer.)</string>
     <string name="question5">Q5. Who was the original author of Dracula?</string>
@@ -42,4 +42,8 @@
     <string name="cooking_image_description" translatable="false">This image plays a gif that shows ice cream rolls</string>
     <string name="button_score">Score</string>
     <string name="painting_image_description" translatable="false">Painting of The Birth of Venus by Botticelli</string>
+    <string name="gradedAnswersExcellent">You are a true art enthusiast, %1$s!\nYou scored %2$d out of 13! Great Job!</string>
+    <string name="gradedAnswersGood">Good Job %1$s!\nYou scored %2$d out of 13. Let\'s try again ;)</string>
+    <string name="gradedAnswersMedium">OH NO %1$s!\nYou scored %2$d out of 13.\nI know you love art, let\'s do this!</string>
+    <string name="gradedAnswersBad">%1$s!\nYou scored %2$d out of 13. That\'s horrible!</string>
 </resources>

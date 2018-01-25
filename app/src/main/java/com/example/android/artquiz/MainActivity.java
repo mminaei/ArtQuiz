@@ -238,19 +238,22 @@ public class MainActivity extends AppCompatActivity {
             case 11:
             case 12:
             case 13:
-                gradedAnswers = "You are a true art enthusiast, " + name + "!\nYou scored " + score + " out of 13! Great Job!";
+                String message = getResources().getString(R.string.gradedAnswersExcellent);
+                gradedAnswers = String.format(message, name, score);
                 break;
             case 7:
             case 8:
             case 9:
             case 10:
-                gradedAnswers = "Good Job " + name + "!\nYou scored " + score + " out of 13. Let's try again ;)";
+                gradedAnswers = getResources().getString(R.string.gradedAnswersGood);
+                gradedAnswers = String.format(gradedAnswers, name, score);
                 break;
             case 3:
             case 4:
             case 5:
             case 6:
-                gradedAnswers = "OH NO " + name + "!\nYou scored " + score + " out of 13.\nI know you love art, let's do this!";
+                gradedAnswers = getResources().getString(R.string.gradedAnswersMedium);
+                gradedAnswers = String.format(gradedAnswers, name, score);
                 break;
             case -13:
             case -12:
@@ -268,7 +271,8 @@ public class MainActivity extends AppCompatActivity {
             case 0:
             case 1:
             case 2:
-                gradedAnswers = name + "!\nYou scored " + score + " out of 13. That's horrible!";
+                gradedAnswers = getResources().getString(R.string.gradedAnswersBad);
+                gradedAnswers = String.format(gradedAnswers, name, score);
                 break;
         }
 
