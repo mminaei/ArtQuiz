@@ -22,7 +22,19 @@ public class MainActivity extends AppCompatActivity {
             isQ42AnswerCorrect, isQ43AnswerCorrect, isQ44AnswerCorrect,
             isQ45AnswerCorrect, isQ46AnswerCorrect, isQ47AnswerCorrect,
             isQ48AnswerCorrect, isQ5AnswerCorrect, isQ6AnswerCorrect;
-
+    RadioButton question1RadioButton2;
+    RadioButton question2RadioButton3;
+    RadioButton question3RadioButton4;
+    RadioButton question5RadioButton1;
+    RadioButton question6RadioButton3;
+    CheckBox question4CheckBox1;
+    CheckBox question4CheckBox2;
+    CheckBox question4CheckBox3;
+    CheckBox question4CheckBox4;
+    CheckBox question4CheckBox5;
+    CheckBox question4CheckBox6;
+    CheckBox question4CheckBox7;
+    CheckBox question4CheckBox8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +64,22 @@ public class MainActivity extends AppCompatActivity {
         Glide.with(this)
                 .load(R.drawable.icecream)
                 .into((ImageView) (findViewById(R.id.cooking)));
+
+
+        /* Initializing RadioButtons and CheckBoxes */
+        question1RadioButton2 = (RadioButton) findViewById(R.id.question1RadioButton2);
+        question2RadioButton3 = (RadioButton) findViewById(R.id.question2RadioButton3);
+        question3RadioButton4 = (RadioButton) findViewById(R.id.question3RadioButton4);
+        question5RadioButton1 = (RadioButton) findViewById(R.id.question5RadioButton1);
+        question6RadioButton3 = (RadioButton) findViewById(R.id.question6RadioButton3);
+        question4CheckBox1 = (CheckBox) findViewById(R.id.question4CheckBox1);
+        question4CheckBox2 = (CheckBox) findViewById(R.id.question4CheckBox2);
+        question4CheckBox3 = (CheckBox) findViewById(R.id.question4CheckBox3);
+        question4CheckBox4 = (CheckBox) findViewById(R.id.question4CheckBox4);
+        question4CheckBox5 = (CheckBox) findViewById(R.id.question4CheckBox5);
+        question4CheckBox6 = (CheckBox) findViewById(R.id.question4CheckBox6);
+        question4CheckBox7 = (CheckBox) findViewById(R.id.question4CheckBox7);
+        question4CheckBox8 = (CheckBox) findViewById(R.id.question4CheckBox8);
     }
 
     /* Method to calculate the final score */
@@ -62,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         boolean isAnswerCorrect;
 
        /* The correct answer to Q1 is choice 2 */
-        isAnswerCorrect = ((RadioButton) findViewById(R.id.question1RadioButton2)).isChecked();
+        isAnswerCorrect = question1RadioButton2.isChecked();
         if (isAnswerCorrect) {
            /* if the right button is checked, then the global variable for Q1 answer is set to true
             * then the Score is increased by 1. There is no negative point for wrong answer.
@@ -74,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
        /* The correct answer to Q2 is choice 3 */
-        isAnswerCorrect = ((RadioButton) findViewById(R.id.question2RadioButton3)).isChecked();
+        isAnswerCorrect = question2RadioButton3.isChecked();
         if (isAnswerCorrect) {
            /* if the right button is checked, then the global variable for Q2 answer is set to true
             * then the Score is increased by 1. There is no negative point for wrong answer.
@@ -86,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
        /* The correct answer to Q3 is choice 4 */
-        isAnswerCorrect = ((RadioButton) findViewById(R.id.question3RadioButton4)).isChecked();
+        isAnswerCorrect = question3RadioButton4.isChecked();
         if (isAnswerCorrect) {
            /* if the right button is checked, then the global variable for Q3 answer is set to true
             * then the Score is increased by 1. There is no negative point for wrong answer.
@@ -101,8 +129,7 @@ public class MainActivity extends AppCompatActivity {
         * If wrong choices are checked, Score will decrease.
         */
 
-        CheckBox checkBox = findViewById(R.id.question4CheckBox1);
-        if (checkBox.isChecked()) {
+        if (question4CheckBox1.isChecked()) {
           /* The choice is wrong, so set the global variable of this answer to false */
             isQ41AnswerCorrect = false;
         } else {
@@ -111,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
             score = score + 1;
         }
 
-        isAnswerCorrect = ((CheckBox) findViewById(R.id.question4CheckBox2)).isChecked();
+        isAnswerCorrect = question4CheckBox2.isChecked();
         if (isAnswerCorrect) {
            /* This choice is correct, so it should be checked to get a point. */
             isQ42AnswerCorrect = true;
@@ -121,8 +148,7 @@ public class MainActivity extends AppCompatActivity {
             isQ42AnswerCorrect = false;
         }
 
-        checkBox = findViewById(R.id.question4CheckBox3);
-        if (checkBox.isChecked()) {
+        if (question4CheckBox3.isChecked()) {
           /* The choice is wrong, so set the global variable of this answer to false */
             isQ43AnswerCorrect = false;
         } else {
@@ -130,8 +156,7 @@ public class MainActivity extends AppCompatActivity {
             isQ43AnswerCorrect = true;
             score = score + 1;
         }
-        checkBox = findViewById(R.id.question4CheckBox4);
-        if (checkBox.isChecked()) {
+        if (question4CheckBox4.isChecked()) {
           /* The choice is wrong, so set the global variable of this answer to false */
             isQ44AnswerCorrect = false;
         } else {
@@ -139,8 +164,7 @@ public class MainActivity extends AppCompatActivity {
             isQ44AnswerCorrect = true;
             score = score + 1;
         }
-        checkBox = findViewById(R.id.question4CheckBox5);
-        if (checkBox.isChecked()) {
+        if (question4CheckBox5.isChecked()) {
           /* The choice is wrong, so set the global variable of this answer to false */
             isQ45AnswerCorrect = false;
         } else {
@@ -148,8 +172,7 @@ public class MainActivity extends AppCompatActivity {
             isQ45AnswerCorrect = true;
             score = score + 1;
         }
-        checkBox = findViewById(R.id.question4CheckBox6);
-        if (checkBox.isChecked()) {
+        if (question4CheckBox6.isChecked()) {
           /* The choice is wrong, so set the global variable of this answer to false */
             isQ46AnswerCorrect = false;
         } else {
@@ -157,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
             isQ46AnswerCorrect = true;
             score = score + 1;
         }
-        isAnswerCorrect = ((CheckBox) findViewById(R.id.question4CheckBox7)).isChecked();
+        isAnswerCorrect = question4CheckBox7.isChecked();
         if (isAnswerCorrect) {
            /* This choice is correct, so it should be checked to get a point. */
             isQ47AnswerCorrect = true;
@@ -167,8 +190,7 @@ public class MainActivity extends AppCompatActivity {
             isQ47AnswerCorrect = false;
         }
 
-        checkBox = findViewById(R.id.question4CheckBox8);
-        if (checkBox.isChecked()) {
+        if (question4CheckBox8.isChecked()) {
           /* The choice is wrong, so set the global variable of this answer to false */
             isQ48AnswerCorrect = false;
         } else {
@@ -178,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
        /* The correct answer to Q5 is choice 1 */
-        isAnswerCorrect = ((RadioButton) findViewById(R.id.question5RadioButton1)).isChecked();
+        isAnswerCorrect = question5RadioButton1.isChecked();
         if (isAnswerCorrect) {
             /* if the right button is checked, then the global variable for Q5 answer is set to true
             * then the Score is increased by 1. There is no negative point for wrong answer.
@@ -190,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
        /* The correct answer to Q6 is choice 3 */
-        isAnswerCorrect = ((RadioButton) findViewById(R.id.question6RadioButton3)).isChecked();
+        isAnswerCorrect = question6RadioButton3.isChecked();
         if (isAnswerCorrect) {
            /* if the right button is checked, then the global variable for Q6 answer is set to true
             * then the Score is increased by 1. There is no negative point for wrong answer.
